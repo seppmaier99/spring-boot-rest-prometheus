@@ -1,0 +1,19 @@
+version: "3"
+services:
+  web:
+    image: fritzthecat/spring-boot-rest-prometheus:6
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+      resources:
+        limits:
+          cpus: "2"
+          memory: 500M
+    ports:
+      - "8080:8080"
+    networks:
+      - webnet
+networks:
+  webnet:
+

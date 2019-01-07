@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: com.github.jenkinsx.quickstarts.springboot.rest.prometheus
+ .RestPrometheusApplication
+
